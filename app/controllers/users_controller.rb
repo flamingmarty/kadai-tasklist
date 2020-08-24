@@ -1,11 +1,4 @@
 class UsersController < ApplicationController
-  before_action :require_user_logged_in, only: [:index, :show]
-  
-  def index #記載不要
-  end
-
-  def show #記載不要
-  end
 
   def new
     @user = User.new
